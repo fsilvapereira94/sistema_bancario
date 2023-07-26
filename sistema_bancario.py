@@ -20,6 +20,8 @@ while True:
         if valor > 0:
             saldo += valor
             extrato += f"Depósito: R$ {valor:.2f}\n"
+            
+            print("Depósito realizado com sucesso!")
 
         else:
             print("Falha na operação! Valor informado inválido.")
@@ -32,6 +34,8 @@ while True:
         excedeu_limite = valor > limite
 
         excedeu_saque = numero_saque >= LIMITE_SAQUE
+
+        print("Saque realizado com sucesso!")
 
         if excedeu_saldo:
             print("Falha na operação! Saldo insuficiente.")
